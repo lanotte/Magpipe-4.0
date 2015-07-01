@@ -1,0 +1,74 @@
+/****************************************
+  > File Name: input2num.c
+  > Author:       Lanotte
+  > Mail:         ssy_lanotte@163.com
+  > Created Time: 2015年01月17日 星期六 14时36分58秒
+  > Function:输入指令转为数字，方便进行选择
+*****************************************/
+
+int action2num(char *action)
+{
+    int n = 0;
+
+    if(strcmp(action,"LOG") == 0)
+    {
+        n = 50;
+    }
+
+    else if(strcmp(action,"REGISTER") == 0)
+    {
+        n = 51;
+    }
+
+    else if(strcmp(action, "SHOW_ONLINE") == 0)
+    {
+        n = 52;
+    }
+
+    else if(strcmp(action,"TRAN") == 0)
+    {
+        n = 53;
+    }
+
+    else if(strcmp(action,"WHISPER") == 0)
+    {
+        n = 54;
+    }
+
+    else if(strcmp(action,"CHAT") == 0)
+    {
+        n = 55;
+    }
+
+    else if(strcmp(action,"SLIENCE") == 0)
+    {
+        n = 56;
+    }
+
+    else if(strcmp(action,"REQUIRE") == 0)
+    {
+        n = 57;
+    }
+
+    else if(strcmp(action,"SAY") == 0)
+    {
+        n = 58;
+    }
+
+    else if(strcmp(action,"QUIT_SYSTEM") == 0)
+    {
+        n = 59;
+    }
+    
+    else if(strcmp(action,"CH_PASSWD") == 0)
+    {
+        n = 60;
+    }
+
+    else if(strcmp(action,"CH_NAME") == 0)
+    {
+        n = 61;
+    }
+
+    return n;
+}
